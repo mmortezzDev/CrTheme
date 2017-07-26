@@ -1,0 +1,18 @@
+{
+  "name"                  :"CrTheme",
+  "description"           :"Basic Theme plugin that customize Ceres template",
+  "namespace"             :"CrTheme",
+  "author"                :"Your name",
+  "keywords"              : ["theme", "Ceres", "template"],
+  "type"                  :"theme",
+  "require"               : [],
+  "serviceProvider"       :"CrTheme\\Providers\\ThemeServiceProvider",
+  "dataProviders"         :
+  [
+    {
+      "key"           :"CrTheme\\Containers\\ThemeContainer",
+      "name"          :"Dark background",
+      "description"   :"Change the background colour of the Ceres template"
+    }
+  ]
+}
