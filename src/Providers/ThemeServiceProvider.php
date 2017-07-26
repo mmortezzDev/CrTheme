@@ -28,6 +28,13 @@ class ThemeServiceProvider extends ServiceProvider
         {
             $partial->set('footer', 'CrTheme::content.ThemeFooter');
         }, 0);
+
+        $eventDispatcher->listen('IO.tpl.basket', function(TemplateContainer $container, $templateData)
+        {
+            $container->setTemplate('CrTheme::content.ThemeBasket');
+            return false;
+        }, 0);
+
         return false;
     }
 
